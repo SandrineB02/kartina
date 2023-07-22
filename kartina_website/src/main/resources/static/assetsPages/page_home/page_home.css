@@ -1,0 +1,213 @@
+/*
+╔══════╗
+║•MAIN•║
+╚══════╝
+*/
+
+main {
+    background-color: rgba(200, 200, 200, 0.500);
+    margin-bottom: -10px;
+}
+
+main .banner {
+    position: relative;
+}
+
+main .banner img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+main .banner .text {
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    text-shadow: 1px 1px 2px gray;
+}
+
+main .banner p {
+    padding-bottom: 10px;
+}
+
+main .banner a {
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+main .banner a:hover {
+    font-size: large;
+}
+
+main .photo {
+    color: goldenrod;
+    width: 100%;
+}
+.photo .header h2, .photo .header h3 {
+    color: goldenrod;
+}
+
+main .photo .header {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+main .photo .header h3 {
+    padding-top: 10px;
+}
+
+main .photo section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main .photo section article {
+    margin: 10px;
+}
+
+main .photo section article .hover {
+    overflow: hidden;
+}
+
+main .photo section article img {
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform .5s ease-in-out;
+}
+
+main .photo section article:hover img {
+    transform: scale(1.3);
+}
+
+main .photo section p {
+    text-align: end;
+}
+
+main .photo .link {
+    text-align: center;
+    margin: 10px;
+}
+
+main .photo .link:hover {
+    font-size: large;
+}
+
+main .photo a {
+    text-decoration: none;
+    color: goldenrod;
+}
+
+main .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-gap: 1em;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    /* hover styles */
+    /* for touch screen devices */
+}
+
+main .grid-container img {
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+}
+
+main .grid-container h2 {
+    margin-bottom: 0.5em;
+}
+
+main .grid-container .location-listing {
+    position: relative;
+}
+
+main .grid-container .location-image {
+    line-height: 0;
+    overflow: hidden;
+}
+
+main .grid-container .location-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+}
+
+main .grid-container .location-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+    background: rgba(164, 35, 35, 0.3);
+    color: white;
+    /* position the text in t’ middle*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .grid-container .location-listing:hover .location-title {
+    opacity: 1;
+}
+
+main .grid-container .location-listing:hover .location-image img {
+    filter: blur(2px);
+}
+
+/*
+╔═════════════════╗
+║•RESPONSIVE MAIN•║
+╚═════════════════╝
+*/
+
+@media (hover: none) {
+    main .grid-container .location-title {
+        opacity: 1;
+    }
+
+    main .grid-container .location-image img {
+        filter: blur(2px);
+    }
+}
+
+@media screen and (max-width: 915px) {
+    main .grid-container img {
+        width: 350px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 739px) {
+    main .photo section .end {
+        text-align: start;
+    }
+
+    main .grid-container img {
+        width: 240px;
+        height: 180px;
+    }
+
+    main .grid-container .location-title {
+        font-size: 0.9em;
+    }
+}

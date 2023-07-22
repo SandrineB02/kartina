@@ -1,0 +1,120 @@
+/*
+╔══════╗
+║•MAIN•║
+╚══════╝
+*/
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(200, 200, 200, 0.500);
+    color: black;
+    margin-bottom: -10px;
+    height: 80vh;
+  }
+   
+
+h2 {
+    text-align: center;
+    margin: 23px;
+}
+
+h2 p {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a :visited {
+    text-decoration: none;
+}
+
+a :hover {
+    transform: scale(1.1);
+}
+
+li {
+    list-style: none;
+}
+
+.sender {
+    cursor: pointer;
+    width: 200px;
+    border: none;
+    outline: none;
+    background: goldenrod;
+    color: white;
+    font-size: 1rem;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.sender :hover {
+    transform: scale(1.1);
+}
+
+table {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 8px 8px 15px 0 rgba(0, 0, 0, .20);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    position: static;
+    margin: 13px;
+    padding: 8px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+tr input {
+    margin-left: 10px;
+}
+
+tr.radio {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+tr.solo {
+    display: flex;
+    justify-content: center;
+}
+
+.solo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radiomiddle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*
+╔═════════════════╗
+║•RESPONSIVE MAIN•║
+╚═════════════════╝
+*/

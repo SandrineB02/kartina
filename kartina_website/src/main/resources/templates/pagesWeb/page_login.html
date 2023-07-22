@@ -1,0 +1,36 @@
+<!-- 
+╔══════╗
+║•MAIN•║
+╚══════╝
+-->
+<main>
+    <section>
+        <!-- Bloc deja client -->
+        <div class="user">
+            <h3>Déjà client</h3>
+            <form action="" method="get">
+                <div>
+                    <label for="email">Adresse e-mail</label>
+                    <input type="email" id="email" name="email" placeholder="@"
+                        pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" title="Entrez votre adresse mail" required>
+                </div>
+
+                <div>
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" placeholder="********"
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                        title="Entrez votre mot de passe" minlength="8" required>
+                    <!-- au moins 8 caractères avec au moins 1 majuscule, 1 minuscule, 1 chiffre et 1 caractère special -->
+                    <a th:href="@{/reset}">Mot de passe oublié ?</a>
+                </div>
+                <a th:href="@{/account}" class="button">Se connecter</a>
+            </form>
+        </div>
+        <!-- Bloc creer un compte -->
+        <div class="non_user">
+            <h3>Vous n'avez pas de compte Kartina</h3>
+            <p>Vous pouvez commander sans créer de compte. Vous pourrez créer votre compte plus tard.</p>
+            <a th:href="@{/create}" class="button">Créer un compte</a>
+        </div>
+    </section>
+</main>

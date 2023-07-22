@@ -1,0 +1,68 @@
+<!-- 
+╔══════╗
+║•MAIN•║
+╚══════╝
+-->
+<main>
+    <table>
+        <form action="post">
+            <tr class="radio">
+                <td>
+                    <input type="radio" name="groupe1" id="monsieur" value="group" checked>
+                    <label for="monsieur">Monsieur</label>
+                </td>
+                <td>
+                    <input type="radio" name="groupe1" id="madame" value="group">
+                    <label for="madame">Madame</label>
+                </td>
+                <td>
+                    <input type="radio" name="groupe1" id="mademoiselle" value="group">
+                    <label for="mademoiselle">Mademoiselle</label>
+                </td>
+            </tr>
+            <div>
+                <td>
+                    <label for="">Nom</label>
+                    <input type="text" name="nom" id="nom">
+                </td>
+                <td>
+                    <label for="">Prénom</label>
+                    <input type="text" name="prenom" id="prenom">
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Adresse</label>
+                        <input type="email" name="adresse" id="adresse">
+                    </td>
+                    <td>
+                        <label for="">Téléphone</label>
+                        <input type="text" name="telephone" id="telephone">
+                    </td>
+                </tr>
+                <tr class="solo">
+                    <td>
+                        <label for="">Sujet</label>
+                        <select name="sujet" id="sujet">
+                            <option value="0"></option>
+                            <option value="1">Aide pour commander</option>
+                            <option value="2">Après-vente, échange et retour</option>
+                            <option value="3">Problème technique</option>
+                            <option value="4">Autres sujets</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="solo">
+                    <td>
+                        <p>Votre message</p>
+                        <textarea name="message" id="message" cols="30" rows="10" maxlength="1000"></textarea>
+                    </td>
+                </tr>
+                <tr class="solo">
+                    <td>
+                        <button class="sender" type="submit">Envoyer</button>
+                    </td>
+                </tr>
+        </form>
+    </table>
+</main>

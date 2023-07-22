@@ -1,0 +1,80 @@
+    <!-- 
+╔════════╗
+║•HEADER•║
+╚════════╝
+-->
+<header class="header">
+    <div class="logo">
+        <a th:href="@{/}">
+            <h1>Kartina</h1>
+        </a>
+        <p>Photographie d'art en édition limitée</p>
+    </div>
+    <form class="search">
+        <input type="text" placeholder="Recherche sur Kartina">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    <div class="user">
+        <div class="userImg">
+            <a th:href="@{/login}"><i class="fa-solid fa-user"></i> Username</a>
+        </div>
+    </div>
+    <div class="help">
+        <a th:href="@{/help}"><i class="fa-solid fa-circle-question"></i> Aide</a>
+    </div>
+    <div class="langage">
+        <img src="" alt="" id="flag" height="35px" width="35px">
+        <select name="lang" id="fr">
+            <option value="" class="choice">◄ Choix Langue ►</option>
+            <option value="Français">Français</option>
+            <option value="English">English</option>
+            <option value="Español">Español</option>
+        </select>
+    </div>
+    <div class="basket">
+        <a th:href="@{/cart}"><i class="fa fa-thin fa-cart-shopping"></i> Panier</a>
+    </div>
+</header>
+<nav>
+    <hr>
+    <ul>
+        <li><a th:href="@{/photography}">Photographies</a></li>
+        <li><a th:href="@{/buying}">Parcours achat</a></li>
+        <li><a th:href="@{/artist}">Artistes</a></li>
+    </ul>
+</nav>
+
+    <!-- 
+╔════════╗
+║•FOOTER•║
+╚════════╝
+-->
+<footer>
+    <div>
+        <hr>
+    </div>
+    <div id="underHr">
+        <div class="langage">
+            <img src="" alt="" id="flag2" height="35px" width="35px">
+            <select name="lang" id="fr2">
+                <option value="" class="choice">◄ Choix Langue ►</option>
+                <option value="Français">Français</option>
+                <option value="English">English</option>
+                <option value="Español">Español</option>
+            </select>
+        </div>
+        <div id="userLink">
+            <div id="mentions">
+                <a th:href="@{/mention}">Mentions légales</a>
+            </div>
+            <p>|</p>
+            <div id="cgu">
+                <a th:href="@{/cgu}">Conditions générales d'utilisation</a>
+            </div>
+        </div>
+        <div id="networkLogo">
+            <a th:href="@{https://www.facebook.com/}" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a th:href="@{https://twitter.com/}" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+</footer>

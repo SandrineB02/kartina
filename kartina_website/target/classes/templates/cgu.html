@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!--META KARTINA-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FAVICON KARTINA-->
+    <link rel="icon" type="image/x-icon" th:href="@{/assets/favicon-Kartina.png}">
+    <!--FONT POPPINS-->
+    <link th:href="@{https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap}" rel="stylesheet">
+    <!--LINK CSS-->
+    <link rel="stylesheet" th:href="@{/commons/headerFooter.css}">
+    <link rel="stylesheet" th:href="@{/assetsPages/page_cgu/page_cgu.css}">
+    <!-- SCRIPT pour ajoutez les icones du header [UTILISE LES CLASSES: "fa"] -->
+    <script th:src="@{https://kit.fontawesome.com/33eca5a9ee.js}" crossorigin="anonymous"></script>
+    <!--NOM DE LA PAGE + Description de la page-->
+    <title>Conditions générales d'utilisation</title><!--CGU-->
+</head>
+
+<body>
+
+    <!-- 
+╔════════╗
+║•HEADER•║
+╚════════╝
+-->
+    <!-- Liaison qui sert à chercher la page dans un autre dossier -->
+    <div th:replace="~{/pagesWeb/headerFooter:: header}">></div>
+    <div th:replace="~{/pagesWeb/headerFooter:: nav}">></div>
+
+    <!----------- FIL D'ARIANE ----------->
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+        <ul>
+            <li><a th:href="@{/}">Accueil</a></li>
+            <li><span aria-current="page">Conditions générales d'utilisation</span></li>
+        </ul>
+    </nav>
+
+    <!-- 
+╔══════╗
+║•MAIN•║
+╚══════╝
+-->
+    <div th:replace="~{pagesWeb/page_cgu:: main}"></div>
+
+    <!-- 
+╔════════╗
+║•FOOTER•║
+╚════════╝
+-->
+    <div th:replace="~{/pagesWeb/headerFooter:: footer}"></div>
+
+    <!-- 
+╔════════╗
+║•SCRIPT•║
+╚════════╝
+-->
+    <script th:src="@{/commons/tradLangage.js}"></script>
+
+</body>
+
+</html>

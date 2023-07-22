@@ -1,0 +1,35 @@
+/*
+╔══════╗
+║•MAIN•║
+╚══════╝
+*/
+
+main {
+    background-color: rgba(200, 200, 200, 0.500);
+    color: black;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+.h1ml {
+    padding: 20px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.h2ml {
+    padding: 20px;
+    width: 800px;
+    margin: 10px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 8px 8px 15px 0 rgba(0, 0, 0, .20);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}

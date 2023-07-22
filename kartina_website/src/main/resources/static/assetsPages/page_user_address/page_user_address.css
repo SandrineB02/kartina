@@ -1,0 +1,119 @@
+/*
+╔══════╗
+║•MAIN•║
+╚══════╝
+*/
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(200, 200, 200, 0.500);
+    margin-bottom: -10px;
+    height: 80vh;
+  }
+
+h2 {
+    color: goldenrod;
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.glassmorphism {
+    text-align: left;
+    padding: 15px;
+    width: 500px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.500);
+    box-shadow: 8px 8px 15px 0 rgba(0, 0, 0, .20);
+    border-radius: 10px;
+    color: black;
+
+}
+
+.glassmorphism h2 {
+    color: black;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form .solo {
+    margin-top: 15px;
+}
+
+input#rue.typer {
+    border: none;
+    margin-top: 25px;
+    padding: 5px;
+    width: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input#cp.typer,
+input#ville.typer {
+    border: none;
+    margin-top: 25px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input#cp.typer {
+    width: 200px;
+}
+
+input#cp.typer {
+    width: 70px;
+}
+
+input#pays.typer {
+    border: none;
+    margin-top: 25px;
+    padding: 5px;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input#rue.typer:hover,
+input#cp.typer:hover,
+input#ville.typer:hover,
+input#pays.typer:hover {
+    border-color: rgb(34, 193, 195);
+}
+
+button.sender {
+    margin-top: 30px;
+    padding: 5px;
+    border: none;
+    width: 200px;
+    background-color: goldenrod;
+    border-radius: 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 130px;
+    font-weight: bold;
+    color: white;
+
+}
+
+button.sender:hover {
+    background-color: rgb(34, 193, 195);
+    color: white;
+    transform: scale(1.1);
+}
+
+label {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*
+╔═════════════════╗
+║•RESPONSIVE MAIN•║
+╚═════════════════╝
+*/

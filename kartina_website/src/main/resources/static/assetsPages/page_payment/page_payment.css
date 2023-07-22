@@ -1,0 +1,117 @@
+/*
+╔══════╗
+║•MAIN•║
+╚══════╝
+*/
+
+main.container {
+    background-color: rgba(200, 200, 200, 0.500);
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    height: 70vh;
+    width: 100%;
+    margin-bottom: -10px;
+    justify-content: space-evenly;
+}
+
+.formprincipal {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 8px 8px 15px 0 rgba(0, 0, 0, .20);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 13px;
+    margin-top: -20px;
+    padding: 10px;
+    width: 400px;
+    height: 250px;
+}
+
+.partright{
+    padding: 10px;;
+}
+
+.partleft{
+    padding: 10px;
+}
+
+.titleprincipal {
+    color: black;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+}
+.titleleft {
+    color: black;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    height:40px;
+}
+
+.checkbox1 {
+    margin-right: 10px;
+}
+
+.adressedefaut {
+    color: black;
+    display: flex;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+}
+
+.newadress {
+    color: black;
+    display: flex;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.titleright {
+    color: black;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    height: 40px;
+}
+
+.CDdefaut {
+    color: black;
+    display: flex;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.NewCB {
+    color: black;
+    display: flex;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+button.sender {
+    padding: 5px;
+    border: none;
+    width: 150px;
+    background-color: goldenrod;
+    font-size: 1rem;
+    color: white;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+button.sender:hover {
+    background-color: rgb(34, 193, 195);
+    color: white;
+    transform: scale(1.1);
+}

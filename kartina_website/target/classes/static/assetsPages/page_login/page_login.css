@@ -1,0 +1,141 @@
+/*
+╔══════╗
+║•MAIN•║
+╚══════╝
+*/
+
+main {
+    height: 80vh;
+    padding-top: 80px;
+    margin-bottom: -10px;
+    background-color: rgba(200, 200, 200, 0.500);
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;  
+}
+
+main .user {
+    background-color: white;
+    border: 0;
+    border-radius: 7px;
+    box-shadow: 1px 1px 10px gray;
+    margin: 10px;
+    padding: 10px 20px;
+    width: 300px;
+    height: 300px;
+}
+
+main .user h3 {
+    color: rgb(78, 78, 78);
+}
+
+main .user form div {
+    margin-top: 20px;
+}
+
+main .user form label {
+    color: gray;
+}
+
+main .user form label:before {
+    content: "* ";
+    color: rgb(204, 55, 55);
+}
+
+main .user form div input {
+    width: 100%;
+    height: 2em;
+    border: 1px solid gray;
+    border-radius: 2px;
+}
+
+main .user form div a {
+    color: gray;
+}
+
+main .user form .login {
+    width: 100%;
+    padding: 10px;
+    margin-top: 7px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px gray;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(78, 78, 78);
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+main .user .button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    margin-top: 7px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px gray;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(204, 55, 55);
+    margin-top: 20px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+
+main .non_user {
+    background-color: white;
+    border: 0;
+    border-radius: 7px;
+    box-shadow: 1px 1px 10px gray;
+    margin: 10px;
+    padding: 10px 20px;
+    width: 300px;
+    height: 300px;
+}
+
+main .non_user h3 {
+    color: rgb(78, 78, 78);
+}
+
+main .non_user p {
+    color: gray;
+    margin-top: 30px;
+}
+
+main .non_user .button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    margin-top: 7px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px gray;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(204, 55, 55);
+    margin-top: 60px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+/*
+╔═════════════════╗
+║•RESPONSIVE MAIN•║
+╚═════════════════╝
+*/
+
+@media screen and (max-width: 915px) {
+    .user, .non_user h3 {
+        font-size: small;
+    }
+
+    .user, .non_user p {
+        font-size: small;
+    }
+}

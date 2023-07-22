@@ -1,0 +1,95 @@
+<!-- 
+╔══════╗
+║•MAIN•║
+╚══════╝
+-->
+<main>
+    <div>
+        <h2>Panier</h2>
+    </div>
+    <div class="infoproduit">
+        <div class="imagepreview">
+
+            <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dm95YWdlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="">
+        </div>
+        <div class="infosartiste">
+            <div class="presentationoeuvre">
+                <p><span>Variable Nom artiste</span></p>
+                <p>Variable Nom Oeuvre</p>
+                <p>Variable Parametre oeuvre</p>
+            </div>
+
+        </div>
+        <div class="produit ">
+            <h3>Description</h3>
+            <div class="format">
+                <h4>Format</h4>
+                <p>Variable format</p>
+            </div>
+            <div class="finition">
+                <h4>Finition</h4>
+                <p>Variable finition</p>
+            </div>
+            <div class="cadre">
+                <h4>Cadre</h4>
+                <p>Variable cadre</p>
+            </div>
+        </div>
+        <div class="quantite">
+            <div>
+                <h3>Quantité</h3>
+                <input type="number" name="quantite" id="quantite" min="0" max="100"></br>
+                <p> <span>&#10007</span> Supprimer</p>
+            </div>
+        </div>
+        <div class="prix">
+            <div>
+                <h3>Prix total</h3>
+            </div>
+            <div><span>Variable du prix</span></div>
+        </div>
+    </div>
+    <div class="continuerachat">
+        <a th:href="@{/buying}">
+        <p> ◄ Continuer mes achats</p>
+        </a>
+    </div>
+    <div class="infototalproduit">
+        <div class="down_total">
+            <div class="infototal">
+                <div class="total">
+                    <div class="cartecadeaux">
+                        <input type="checkbox"><label for=""> J'ai une carte cadeau / un code promo</label>
+                    </div>
+                </div>
+                <div class="totalttc">
+                    <div>
+                        <p>Total TTC</p>
+                    </div>
+                    <div>
+                        <p><span>Variable du prix</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="btn">
+                <button class="sender">Valider</button>
+            </div>
+            <div class="infosecurise">
+                <p>Paiement sécurisé &#128274;</p>
+            </div>
+
+            <div class="cblogo">
+                <div class="cb">
+                    <a href=""></a><i class="fa-brands fa-cc-visa fa-xl"> Visa</i>
+                </div>
+                <div class="cb">
+                    <a href=""></a><i class="fa-brands fa-cc-mastercard fa-xl"> Mastercard</i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <div></div>
+</main>

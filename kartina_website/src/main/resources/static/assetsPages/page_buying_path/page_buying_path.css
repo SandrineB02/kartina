@@ -1,0 +1,284 @@
+/*
+╔══════╗
+║•MAIN•║
+╚══════╝
+*/
+
+main {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(200, 200, 200, 0.500);
+    color: black;
+    margin-bottom: -10px;
+    height: 100%;
+}
+
+main .lateralgauche {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 8px 8px 15px 0 rgba(0, 0, 0, .20);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+}
+
+main .lateralgauche .blocprevisualisation {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+main .lateralgauche .vignettes {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 6px;
+}
+
+main .lateralgauche .vignettes .fullscreen {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    cursor: pointer;
+}
+
+main .lateralgauche .vignettes .fullscreen p {
+    font-size: 8px;
+}
+
+main .lateralgauche .biographie {
+    margin-top: 10px;
+}
+
+main .lateralgauche .biographie div {
+    display: flex;
+    justify-content: center;
+}
+
+main .fscreen {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+main .fscreen img {
+    left: calc(50% - attr(width) / 2);
+    top: calc(50% - attr(height) / 2);
+}
+
+main .lateraldroit {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 8px 8px 15px 0 rgba(0, 0, 0, .20);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+}
+
+main .lateraldroit .title h2 {
+    font-size: 1.3rem;
+}
+
+main .lateraldroit .avancement {
+    display: flex;
+    flex-direction: column;
+}
+
+main .lateraldroit .avancement .ffc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+main .lateraldroit .avancement .ffc .formatprimaire {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .lateraldroit .avancement .ffc .formatprimaire img {
+    border-radius: 50%;
+}
+
+main .lateraldroit .avancement .ffc .finitionprimaire {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .lateraldroit .avancement .ffc .finitionprimaire img {
+    border-radius: 50%;
+}
+
+main .lateraldroit .avancement .ffc .cadreprimaire {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .lateraldroit .avancement .ffc .cadreprimaire img {
+    border-radius: 50%;
+}
+
+main .lateraldroit .format {
+    display: flex;
+    flex-direction: column;
+}
+
+main .lateraldroit .format .select {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+main .lateraldroit .format .select div {
+    margin-right: 8px;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+
+main .lateraldroit .format .select .checker {
+    width: 6%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-left: 8px;
+}
+
+main .lateraldroit .finition {
+    display: flex;
+    flex-direction: column;
+}
+
+main .lateraldroit .cadre {
+    display: flex;
+    flex-direction: column;
+}
+
+main .lateraldroit .etaping {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main .lateraldroit .precedente button {
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    margin-bottom: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main .lateraldroit .precedente button:hover {
+    color: blue;
+}
+
+main .lateraldroit .suivante button {
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    margin-bottom: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main .lateraldroit .suivante button:hover {
+    color: blue;
+}
+
+main .price div {
+    display: flex;
+    flex-direction: row;
+}
+
+main .price div .total {
+    display: flex;
+    justify-content: end;
+    width: 60%;
+    font-weight: bold;
+}
+
+main .price div .prix {
+    display: flex;
+    justify-content: end;
+    width: 40%;
+    font-weight: bold;
+}
+
+main .confirmation {
+    display: flex;
+    justify-content: center;
+}
+
+main .confirmation button {
+    width: 100%;
+    height: 25px;
+    border-radius: 2px;
+    background-color: red;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+main .confirmation button:hover {
+    transform: scale(1);
+    background-color: #90397d;
+    transition: 0.8s;
+}
+
+h2 {
+    text-align: center;
+    margin: 23px;
+}
+
+h2 p {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a :visited {
+    text-decoration: none;
+}
+
+/* a :hover {
+    transform: scale(1.1);
+} */
+
+li {
+    list-style: none;
+}
+
+#confirmer[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+/*
+╔═════════════════╗
+║•RESPONSIVE MAIN•║
+╚═════════════════╝
+*/

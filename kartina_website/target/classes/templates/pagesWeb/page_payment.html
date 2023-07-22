@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--META KARTINA-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FAVICON KARTINA-->
+    <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/25mJKJ3N/favicon-Kartina.png">
+    <!--FONT POPPINS-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <!--LINK CSS-->
+    <link rel="stylesheet" href="/kartina_website/src/main/resources/static/commons/headerFooter.css"> 
+    <link rel="stylesheet" href="/kartina_website/src/main/resources/static/assetsPages/page_payment/page_payment.css">
+    <!-- SCRIPT pour ajoutez les icones du header [UTILISE LES CLASSES: "fa"] -->
+    <script src="https://kit.fontawesome.com/33eca5a9ee.js" crossorigin="anonymous"></script>
+    <!--NOM DE LA PAGE + Description de la page-->
+    <title>Kartina</title><!--Page des données utilisateur-->
+</head>
+
+<body>
+    <!-- 
+╔════════╗
+║•HEADER•║
+╚════════╝
+-->
+    <header class="header">
+        <div class="logo">
+            <a href="">
+                <h1>Kartina</h1>
+            </a>
+            <p>Photographie d'art en édition limitée</p>
+        </div>
+        <form class="search">
+            <input type="text" placeholder="Recherche sur Kartina">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <div class="user">
+            <div class="userImg">
+                <a href=""><i class="fa-solid fa-user"></i> Username</a>
+            </div>
+        </div>
+        <div class="help">
+            <a href=""><i class="fa-solid fa-circle-question"></i> Aide</a>
+        </div>
+        <div class="langage">
+            <img src=""  alt="" id="flag" height="35px" width="35px">
+
+            <select name="lang" id="fr">
+                <option value="" class="choice">◄ Choix Langue ►</option>
+                <option value="Français">Français</option>
+                <option value="English">English</option>
+                <option value="Español">Español</option>
+            </select>
+        </div>
+        <div class="basket">
+            <a href=""><i class="fa fa-thin fa-cart-shopping"></i> Panier</a>
+        </div>
+    </header>
+    <nav>
+        <hr>
+        <ul>
+            <li><a href="❌">Photographies</a></li>
+            <li><a href="❌">Nouveautés</a></li>
+            <li><a href="❌">Artistes</a></li>
+            <li><a href="❌">Derniers exemplaires</a></li>
+        </ul>
+    </nav>
+    <!----------- FIL D'ARIANE ----------->
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+        <ul>
+            <li><a href="❌">Accueil</a></li>
+            <li><span aria-current="page">Paiement</span></li>
+        </ul>
+    </nav>
+    <!-- 
+╔══════╗
+║•MAIN•║
+╚══════╝
+-->
+    <main class="container">
+            <div class="titleprincipal">
+                <h2>Données de paiement</h2>
+            </div>
+            <div class="formprincipal">
+            <form action="">
+                <div class="partleft">
+                    <h3 class="titleleft">Livraison</h3>
+                    <hr>
+                    <div class="adressedefaut">
+                        <input type="checkbox" class="checkbox1" >
+                        <p>Utiliser l'adresse par defaut</p>
+                    </div>
+
+                    <div class="newadress">
+                        <input type="checkbox" class="checkbox1">
+                        <p>Utiliser une nouvelle adresse</p>
+                    </div>
+                </div>
+            </form>
+            <form action="">
+                <div class="partright">
+                    <h3 class="titleright">Coordonnées bancaires</h3>
+                    <hr>
+                    <div class="CDdefaut">
+                        <input type="checkbox" class="checkbox1">
+                        <p>Utiliser la Carte Bancaire par defaut</p>
+                    </div>
+
+                    <div class="NewCB">
+                        <input type="checkbox" class="checkbox1">
+                        <p>Utiliser une nouvelle carte Bancaire</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div>
+            <button class="sender" type="submit" id="sender">Valider</button>
+        </div>
+
+        
+    </main>
+    <!-- 
+╔════════╗
+║•FOOTER•║
+╚════════╝
+-->
+    <footer>
+        <div>
+            <hr>
+        </div>
+        <div id="underHr">
+            <div class="langage">
+                <img src="" alt="" id="flag2" height="35px" width="35px">
+
+                <select name="lang" id="fr2">
+                    <option value="" class="choice">◄ Choix Langue ►</option>
+                    <option value="Français">Français</option>
+                    <option value="English">English</option>
+                    <option value="Español">Español</option>
+                </select>
+            </div>
+            <div id="userLink">
+                <div id="mentions">
+                    <a href="❌">Mentions légales</a>
+                </div>
+                <p>|</p>
+                <div id="cgu">
+                    <a href="/page_cgu/page_cgu.html">Conditions Générale d'utilisation</a>
+                </div>
+            </div>
+            <div id="networkLogo">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- 
+╔════════╗
+║•SCRIPT•║
+╚════════╝
+-->
+<script src="/kartina_website/src/main/resources/static/assetsPages/page_home/page_home.js"></script>
+</body>
+
+</html>

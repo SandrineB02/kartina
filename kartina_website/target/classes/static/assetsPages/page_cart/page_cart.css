@@ -1,0 +1,231 @@
+/*
+╔══════╗
+║•MAIN•║
+╚══════╝
+*/
+
+main {
+
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: -10px;
+    background-color: rgb(200, 200, 200, 0.500);
+    height: 100%;
+}
+
+main h2 {
+    text-transform: uppercase;
+    padding-top: 25px;
+    text-align: center;
+    color: goldenrod;
+    font-size: 2.5em;
+    margin-bottom: 25px;
+}
+
+main h2 p {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+.infoproduit {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+    margin-right: 9%;
+    margin-left: 10%;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.400);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.infosartiste p {
+    padding: 5px;
+}
+
+.infosartiste p span {
+    font-weight: bold;
+}
+
+.produit h3,
+.quantite h3,
+.prix h3,
+.total h3 {
+    margin-top: 10px;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+
+.infosartiste {
+    margin-top: 90px;
+    text-align: left;
+}
+
+.quantite input[type="number"] {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.cartecadeaux {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 0;
+}
+
+.totalttc {
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.totalttc {
+    font-weight: bold;
+}
+
+.imagepreview {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.infoproduit img {
+    width: 200px;
+    margin: 15px;
+    border: 3px solid white;
+}
+
+.produit div {
+    margin-bottom: 15px;
+}
+
+.produit h3 {
+    padding: 5px;
+}
+
+.quantite img {
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.quantite h3 {
+    padding-bottom: 5px;
+}
+
+.quantite span {
+    cursor: pointer;
+}
+
+.quantite span:hover {
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
+
+
+.continuerachat p {
+    margin-right: 70%;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    color: goldenrod;
+}
+
+.continuerachat p:hover {
+    color: white;
+}
+
+.continuerachat a {
+    text-decoration: none;
+}
+
+.infototalproduit {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.down_total {
+    margin-top: -50px;
+    width: 30%;
+    margin-right: 10%;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.infototal {
+    text-align: left;
+}
+
+.prix {
+    display: flex;
+    flex-direction: column;
+}
+
+.prix span {
+    font-weight: bold;
+}
+
+.infototal input {
+    cursor: pointer;
+}
+
+.infosecurise {
+    margin-top: 25px;
+    color: white;
+}
+
+.cblogo {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cblogo i {
+    height: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.cblogo i:hover {
+
+    color: rgb(25, 51, 156);
+    transform: scale(1.1);
+}
+
+.sender {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: goldenrod;
+    color: #fff;
+    font-size: 1rem;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.sender:hover {
+    transform: scale(1.1);
+    background-color: rgb(34, 193, 195);
+}
+
+/*
+╔═════════════════╗
+║•RESPONSIVE MAIN•║
+╚═════════════════╝
+*/

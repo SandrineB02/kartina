@@ -1,0 +1,44 @@
+<!-- 
+╔══════╗
+║•MAIN•║
+╚══════╝
+-->
+<main>
+    <div class="Tboxleft">
+        <h2>Mon Compte</h2>
+        <div class="adminboxleft">
+            <a th:href="@{/user}">
+                <p>Données Personnelles</p>
+            </a>
+            <a th:href="@{/address}">
+                <p>Adresse</p>
+            </a>
+            <h3>Commandes</h3>
+            <a th:href="@{/cart}">
+                <p>Mes Commandes</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="Tboxright">
+        <h2>Mon Compte | <a class="deco" th:href="@{/}">Deconnexion</a></h2>
+        <h2 id="nameandfirstname"></h2>
+        <div class="adminboxright">
+            <img src="https://i.postimg.cc/J4bzgpLc/iconData.png" alt="utilisateur" height="30px">
+            <h3>Données</h3>
+            <a th:href="@{/user}">
+                <p>Afficher ou mettre à jour données personnelles</p>
+            </a>
+            <img src="https://i.postimg.cc/bNb95frC/icon-Shipping.png" alt="commandes" height="30px">
+            <h3>Commandes</h3>
+            <a th:href="@{/cart}">
+                <p>Vérifier le status de vos commandes ou voir les commandes passées</p>
+            </a>
+            <img src="https://i.postimg.cc/7YpS1sN3/icon-Location.png" alt="adresses" height="30px">
+            <h3>Adresses</h3>
+            <a th:href="@{/address}">
+                <p>Gérer vos adresses de livraison et de facturation</p>
+            </a>
+        </div>
+    </div>
+</main>

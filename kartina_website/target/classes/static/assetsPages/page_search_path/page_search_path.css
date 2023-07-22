@@ -1,0 +1,119 @@
+/*
+╔══════╗
+║•MAIN•║
+╚══════╝
+*/
+
+main {
+    display: flex;
+    color: white;
+    background-color: rgb(200, 200, 200, 0.500);
+    padding: 17px;
+    margin-bottom: -10px;
+    color: black;
+    height: 100%;
+}
+
+
+.filtrage {
+    display: flex;
+    flex-direction: column;
+    padding-right: 150px;
+    margin-bottom: 30px;
+    width: 800px;
+}
+
+.filtrage h3 {
+    color: goldenrod;
+    margin-bottom: 10px;
+}
+
+.filtrage .filtrage_theme,
+.filtrage .filtrage_orientation,
+.filtrage .filtrage_format,
+.filtrage .filtrage_prix,
+.filtrage .filtrage_avance {
+    margin-bottom: 25px;
+}
+
+.results_header h2 {
+    margin-bottom: 20px;
+    color: goldenrod;
+}
+
+.tri {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 200;
+    font-weight: bold;
+    color: goldenrod;
+}
+
+.photography {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1000px;
+}
+
+#photos {
+    width: 330px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+#photos img {
+    display: inline;
+    height: 330px;
+    width: 330px;
+    position: relative;
+    object-fit: cover;
+    transition: transform .5s ease-in-out;
+}
+
+#photos:hover img {
+    transform:scaleX(1.1)
+}
+
+#photos p {
+    color: goldenrod;
+    text-align: end;
+}
+
+.pagination nav{
+    background-color: transparent;
+}
+
+nav .pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination li a{
+    margin: 0 1px;
+    list-style: none;
+    padding: 5px;
+    color: black;
+}
+
+.pagination span{
+    color: black;
+}
+.pagination span:hover{
+    color:  goldenrod;
+}
+
+#liste-noms {
+    display: flex;
+    justify-content: center;
+}
+
+/*
+╔═════════════════╗
+║•RESPONSIVE MAIN•║
+╚═════════════════╝
+*/
